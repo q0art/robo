@@ -1,0 +1,41 @@
+.benefits {
+	background: $silver-color;
+
+	&__container {
+		@include flex-justify-center;
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	&__content-list {
+		@include flex-center-center;
+		gap: 40px;
+
+		@include low-laptop {
+			flex-direction: column;
+		}
+	}
+
+	&__content-title {
+		margin-bottom: 20px;
+	}
+
+	&__content-title::after {
+		content: 'i';
+		margin-left: 10px;
+		padding: 0px 12px;
+
+		font-size: $text-font-size;
+		background-color: $silver-color;
+		border-radius: 20px;
+
+		cursor: pointer;
+		box-shadow: $light-shadow;
+	}
+
+	&__content-text {
+		@include low-laptop {
+			max-width: 400px;
+		}
+	}
+}

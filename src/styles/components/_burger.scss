@@ -1,0 +1,30 @@
+.burger--open,
+.burger--close {
+	display: none;
+	width: 44px;
+	height: 44px;
+
+	border-radius: 10px;
+	border: 1px solid $platinum-color;
+
+	@include tablet {
+		display: block;
+	}
+}
+
+.burger--open {
+	position: relative;
+	background: url('../../../public/svg/menu-open.svg') no-repeat center,
+		$black-gradient-color;
+	background-size: 24px 24px;
+}
+
+.burger--close {
+	position: absolute;
+
+	top: 40px;
+	right: $container-offset;
+	background: url('../../../public/svg/menu-close.svg') no-repeat center,
+		$black-gradient-color;
+	background-size: 24px 24px;
+}

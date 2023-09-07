@@ -1,0 +1,19 @@
+@import 'reset';
+@import 'vars';
+
+@import 'mixins/breakpoints';
+@import 'mixins/flex';
+@import 'mixins/fonts';
+
+@import 'all';
+
+@import 'components/about';
+@import 'components/benefits';
+@import 'components/burger';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/order';
+@import 'components/packets';
+@import 'components/popup';
+@import 'components/trainers';

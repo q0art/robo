@@ -1,0 +1,40 @@
+.footer {
+	padding: 40px 0;
+	background-color: $black-color;
+
+	&__container {
+		@include flex-space-center;
+		gap: 40px;
+
+		@include tablet {
+			flex-direction: column;
+		}
+	}
+}
+
+.footer__logo::after,
+.footer__phone::after {
+	content: '© ROBO.SCHOOL';
+	text-transform: uppercase;
+	color: $platinum-color;
+	font-size: $text-font-size;
+}
+
+.footer__logo::after {
+	margin-top: 20px;
+	display: block;
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.footer__phone::after {
+	display: none;
+
+	@include tablet {
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,30 @@
+$primary-font-face: 'Jost', sans-serif;
+
+$primary-line-heigth: 160%;
+
+$title-font-size: 50px;
+$subtitle-font-size: 30px;
+$text-font-size: 18px;
+
+$black-color: #141024;
+$red-color: #d52027;
+$white-color: #ffffff;
+
+$gray-color: rgba(20, 16, 36, 0.7);
+$platinum-color: rgba(255, 255, 255, 0.08);
+$silver-color: rgba(20, 16, 36, 0.08);
+
+$black-gradient-color: linear-gradient(
+	185deg,
+	rgba(20, 16, 36, 1) 0%,
+	rgba(51, 41, 91, 1) 100%
+);
+
+$light-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$content-width: 1170px;
+$content-fluid-width: 1890px;
+
+$container-offset: 15px;
+$container-width: calc($content-width + 2 * $container-offset);
+$container-fluid-width: calc($content-fluid-width + 2 * $container-offset);

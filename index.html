@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="./public/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>robo.school</title>
+		<!-- preconnect -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<!-- jost -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- styles -->
+		<link rel="stylesheet" href="./src/styles/index.scss" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<div class="container-fluid header__container">
+				<a href="#" class="logo header__logo">robo.school</a>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="#about" class="header__nav-link">О школе</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#trainers" class="header__nav-link">Тренеры</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#packets" class="header__nav-link">Стоимость</a>
+						</li>
+					</ul>
+					<button class="burger--close"></button>
+				</nav>
+				<a href="telto#" class="phone header__phone">+7 800 000 11 22</a>
+				<button class="burger--open"></button>
+			</div>
+		</header>
+		<!-- hero -->
+		<section class="section-offset hero">
+			<div class="container hero__container">
+				<div class="hero-content">
+					<h1 class="hero-content__title">robo.school</h1>
+					<p class="hero-content__text">
+						Курсы повышения квалификации по робототехнике для педагогов
+						начальной школы
+					</p>
+					<button class="btn--primary hero-content__btn">
+						Записаться на курс
+					</button>
+				</div>
+				<img src="./public/images/hero.png" alt="hero" class="hero__image" />
+			</div>
+			<button class="btn--primary hero__btn">Записаться на курс</button>
+		</section>
+		<!-- about -->
+		<section id="about" class="section-offset about">
+			<div class="container about__container">
+				<div class="about__text">
+					<span class="about__text--highlight">Robo School</span>
+					– учреждение для формирования кадрового педагогического резерва в
+					сфере робототехникии программирования
+				</div>
+				<ul class="about__content-list">
+					<li class="about__content-item">
+						<span class="about__content-digit">10</span>
+						<p class="about__content-text">
+							УМК по различным направлениям по робототехнике
+						</p>
+					</li>
+					<li class="about__content-item">
+						<span class="about__content-digit">20</span>
+						<p class="about__content-text">
+							Школ, в которых запущена робототехника
+						</p>
+					</li>
+					<li class="about__content-item">
+						<span class="about__content-digit">100</span>
+						<p class="about__content-text">
+							Педагогов прошедших курсы повышения квалификации
+						</p>
+					</li>
+					<li class="about__content-item">
+						<span class="about__content-digit">10 000</span>
+						<p class="about__content-text">
+							Обученных детей на базе собственных центров
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- benefits -->
+		<section class="section-offset benefits">
+			<div class="container benefits__container">
+				<h2 class="section-title benefits__title">
+					Что вы получите после курса
+				</h2>
+				<ul class="benefits__content-list">
+					<li class="benefits__content-item">
+						<h3 class="section-subtitle benefits__content-title">
+							Удостоверение
+							<span class="tooltip">Государственного образца</span>
+						</h3>
+						<p class="section-text benefits__content-text">
+							Дающее право преподавать робототехнику для детей 6-12 лет в
+							образовательных учреждениях
+						</p>
+					</li>
+					<li class="benefits__content-item">
+						<h3 class="section-subtitle benefits__content-title">
+							Знания
+							<span class="tooltip">От мастеров своего дела</span>
+						</h3>
+						<p class="section-text benefits__content-text">
+							По основам разработки учебно-методических комплексов по
+							робототехнике и программированию
+						</p>
+					</li>
+					<li class="benefits__content-item">
+						<h3 class="section-subtitle benefits__content-title">
+							Практику
+							<span class="tooltip">При наличие свободных мест</span>
+						</h3>
+						<p class="section-text benefits__content-text">
+							Возможность пройти практику по преподаванию робототехники на базе
+							R:ED LAB (в оффлайн или онлайн формате)
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- trainers -->
+		<section id="trainers" class="section-offset trainers">
+			<div class="container trainers__container">
+				<h2 class="section-title trainers__title">Профессиональные тренеры</h2>
+			</div>
+			<div class="trainers__wrapper">
+				<div class="swiper trainers__cards">
+					<div class="swiper-wrapper">
+						<!-- trainer 1 -->
+						<div class="swiper-slide trainers-card">
+							<img
+								src="./public/images/irina.jpg"
+								class="trainers-card__image"
+								alt="trainer"
+							/>
+							<h3 class="trainers-card__subtitle">Ирина Лайм</h3>
+							<p class="trainers-card__text">преподаватель по робототехнике</p>
+							<a href="#" data-trainers="" class="trainers-card__link"
+								>Подробнее</a
+							>
+						</div>
+						<!-- trainer 2 -->
+						<div class="swiper-slide trainers-card">
+							<img
+								src="./public/images/marina.jpg"
+								class="trainers-card__image"
+								alt="trainer"
+							/>
+							<h3 class="trainers-card__subtitle">Марина Орлова</h3>
+							<p class="trainers-card__text">преподаватель по робототехнике</p>
+							<a href="#" data-trainers="" class="trainers-card__link"
+								>Подробнее</a
+							>
+						</div>
+						<!-- trainer 3 -->
+						<div class="swiper-slide trainers-card">
+							<img
+								src="./public/images/maxim.jpg"
+								class="trainers-card__image"
+								alt="trainer"
+							/>
+							<h3 class="trainers-card__subtitle">Максим Петров</h3>
+							<p class="trainers-card__text">
+								преподаватель по программированию
+							</p>
+							<a href="#" data-trainers="" class="trainers-card__link"
+								>Подробнее</a
+							>
+						</div>
+						<!-- trainer 4 -->
+						<div class="swiper-slide trainers-card">
+							<img
+								src="./public/images/konstantin.jpg"
+								class="trainers-card__image"
+								alt="trainer"
+							/>
+							<h3 class="trainers-card__subtitle">Константин Назаров</h3>
+							<p class="trainers-card__text">преподаватель по робототехнике</p>
+							<a href="#" data-trainers="" class="trainers-card__link"
+								>Подробнее</a
+							>
+						</div>
+						<!-- trainer 5 -->
+						<div class="swiper-slide trainers-card">
+							<img
+								src="./public/images/liza.jpg"
+								class="trainers-card__image"
+								alt="trainer"
+							/>
+							<h3 class="trainers-card__subtitle">Лиза Весенняя</h3>
+							<p class="trainers-card__text">
+								преподаватель по программированию
+							</p>
+							<a href="#" data-trainers="" class="trainers-card__link"
+								>Подробнее</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container trainers__container">
+				<div class="trainers-nav">
+					<div class="trainers-nav__scrollbar"></div>
+					<div class="trainers-nav__btns">
+						<button class="trainers-nav__btn trainers-nav__btn--prev"></button>
+						<button class="trainers-nav__btn trainers-nav__btn--next"></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- packets -->
+		<section id="packets" class="section-offset packets">
+			<div class="container packets__container">
+				<h2 class="section-title packets__title">Выберите нужный пакет</h2>
+				<ul class="packets__content-list">
+					<li class="packets__content-item packets__content-item--primary">
+						<h3 class="section-subtitle packets__content-title">– PRO –</h3>
+						<div class="section-subtitle packets__content-price">20.000 ₽</div>
+						<p class="section-text packets__content-text">
+							УМК по робототетхнике и программированию
+						</p>
+						<button class="btn--primary packets__content-btn">
+							Оставить заявку
+						</button>
+					</li>
+					<li class="packets__content-item">
+						<h3 class="section-subtitle packets__content-title">– ROBO –</h3>
+						<div class="section-subtitle packets__content-price">15.000 ₽</div>
+						<p class="section-text packets__content-text">
+							УМК по робототетхнике
+						</p>
+						<button class="btn--primary packets__content-btn">
+							Оставить заявку
+						</button>
+					</li>
+					<li class="packets__content-item">
+						<h3 class="section-subtitle packets__content-title">– PROG –</h3>
+						<div class="section-subtitle packets__content-price">10.000 ₽</div>
+						<p class="section-text packets__content-text">
+							УМК по программированию
+						</p>
+						<button class="btn--primary packets__content-btn">
+							Оставить заявку
+						</button>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- order -->
+		<section class="section-offset order">
+			<div class="container order__container">
+				<div class="order-content">
+					<h3 class="section-subtitle order-content__title">
+						Запишитесь на курс со скидкой 10%
+					</h3>
+					<p class="section-text order-content__text">
+						Акция действительна до 10 марта 2022 года
+					</p>
+				</div>
+				<form action="#" class="order-form">
+					<label for="name" class="order-form__label">
+						<input
+							id="name"
+							type="text"
+							placeholder="Имя"
+							class="input input-name order-form__input"
+							required
+							pattern="^[а-яА-ЯёЁ]{4,12}$"
+					/></label>
+					<label for="tel" class="order-form__label">
+						<input
+							id="tel"
+							type="tel"
+							placeholder="Телефон"
+							class="input input-tel order-form__input"
+							required
+							pattern="^(?:\+7|8)[0-9]{10,11}$"
+						/>
+					</label>
+					<label for="email" class="order-form__label">
+						<input
+							id="email"
+							type="email"
+							placeholder="E-mail"
+							class="input input-email order-form__input"
+							required
+							pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+						/>
+					</label>
+					<button class="btn--secondary order-form__btn">
+						Оформить заявку
+					</button>
+				</form>
+			</div>
+		</section>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container-fluid footer__container">
+				<a href="#" class="logo footer__logo">robo.school</a>
+				<a href="telto#" class="phone footer__phone">+7 800 000 11 22</a>
+			</div>
+		</footer>
+		<!-- popup -->
+	</body>
+	<script type="module" src="./src/scripts/index.js"></script>
+</html>

@@ -1,0 +1,37 @@
+.order {
+	background: $red-color url('./../../../public/svg/percent.svg') repeat-x
+		bottom center;
+
+	&__container {
+		@include flex-center-center;
+		gap: 80px;
+
+		@include low-laptop {
+			flex-direction: column;
+		}
+	}
+}
+
+.order-content {
+	@include flex-justify-center;
+	flex-direction: column;
+	gap: 40px;
+	max-width: 400px;
+
+	&__title,
+	&__text {
+		color: $white-color;
+	}
+
+	&__text {
+		@include low-laptop {
+			text-align: center;
+		}
+	}
+}
+
+.order-form {
+	@include flex-justify-center;
+	flex-direction: column;
+	gap: 20px;
+}

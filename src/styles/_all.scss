@@ -1,0 +1,168 @@
+html,
+body {
+	box-sizing: border-box;
+
+	position: relative;
+	height: 100vh;
+
+	font-family: $primary-font-face;
+	line-height: $primary-line-heigth;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	border: none;
+	background: transparent;
+}
+
+a,
+button,
+input {
+	cursor: pointer;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 $container-offset;
+	max-width: $container-width;
+}
+
+.container-fluid {
+	margin: 0 auto;
+	padding: 0 $container-offset;
+	max-width: $content-fluid-width;
+}
+
+.section-offset {
+	padding: 120px 0;
+}
+
+.section-title,
+.section-subtitle {
+	color: $black-color;
+	font-weight: 600;
+
+	@include low-laptop {
+		text-align: center;
+	}
+}
+
+.section-title {
+	font-size: $title-font-size;
+
+	@include low-laptop {
+		font-size: $subtitle-font-size;
+	}
+}
+
+.section-subtitle {
+	font-size: $subtitle-font-size;
+
+	@include low-laptop {
+		font-size: $text-font-size;
+	}
+}
+
+.section-text {
+	color: $gray-color;
+	font-size: $text-font-size;
+	font-weight: 400;
+
+	@include low-laptop {
+		font-size: 16px;
+	}
+}
+
+.logo {
+	text-transform: uppercase;
+}
+
+.logo,
+.phone {
+	color: $white-color;
+	font-size: 30px;
+	font-weight: 600;
+
+	@include low-laptop {
+		font-size: 24px;
+	}
+}
+
+.btn--primary,
+.btn--secondary {
+	color: $white-color;
+	font-size: $text-font-size;
+	padding: 20px;
+	border-radius: 5px;
+
+	box-shadow: $light-shadow;
+}
+
+.btn--primary {
+	background-color: $red-color;
+}
+
+.btn--secondary {
+	background-color: $black-color;
+}
+
+.tooltip {
+	padding: 10px;
+	background: $white-color;
+	border-radius: 5px;
+
+	opacity: 0;
+
+	color: $black-color;
+	font-size: $text-font-size;
+
+	box-shadow: $light-shadow;
+}
+
+.swiper-scrollbar-drag {
+	background: $black-color !important;
+}
+
+.input {
+	width: 500px;
+	height: 64px;
+	padding: 0 20px;
+	color: $black-color;
+	font-size: $text-font-size;
+	border-radius: 5px;
+	box-shadow: $light-shadow;
+
+	@include low-laptop {
+		width: 600px;
+	}
+
+	@include tablet {
+		width: 400px;
+	}
+
+	@include mobile {
+		width: 280px;
+	}
+}
+
+.input:invalid {
+	border: 2px solid red;
+	background-color: #ff9999;
+}
+
+.input:valid {
+	border: none;
+	background: $white-color;
+}
+
+.is-active {
+	// helpers
+}
