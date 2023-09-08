@@ -3,7 +3,7 @@
 	background-color: $black-color;
 
 	&__left {
-		@include flex-align-center;
+		@include flex-justify-center;
 		flex-direction: column;
 		gap: 20px;
 

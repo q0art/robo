@@ -10,8 +10,9 @@ export const activeTab = () => {
 			tabs.forEach((tab) => {
 				tab.classList.remove('is-active');
 			});
+
 			tabContents[index].classList.add('is-active');
-			tabs[index].classList.add('is-active');
+			tab.classList.add('is-active');
 		});
 	});
 
@@ -25,4 +26,6 @@ export const activeTab = () => {
 
 	tabs[0].classList.add('is-active');
 	tabContents[0].classList.add('is-active');
+
+	console.log(tabs[0], tabContents[0]);
 };

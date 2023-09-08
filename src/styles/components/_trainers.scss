@@ -4,8 +4,13 @@
 	}
 
 	&__wrapper {
+		overflow-x: hidden;
 		padding: 40px 0 40px
 			max($container-offset, calc(100% - $container-width) / 2);
+	}
+
+	&__cards {
+		overflow: visible !important;
 	}
 }
 

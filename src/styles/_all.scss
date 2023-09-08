@@ -43,6 +43,14 @@ button {
 	padding: 120px 0;
 }
 
+.section-offset.hero {
+	padding: 120px 0 0;
+
+	@include low-laptop {
+		padding: 120px 0;
+	}
+}
+
 .section-title,
 .section-subtitle {
 	color: $black-color;
@@ -132,7 +140,9 @@ button {
 	padding: 0 20px;
 	color: $black-color;
 	font-size: $text-font-size;
+	border: none;
 	border-radius: 5px;
+	background-color: $white-color;
 	box-shadow: $light-shadow;
 
 	@include low-laptop {
@@ -148,14 +158,9 @@ button {
 	}
 }
 
-.input:invalid {
+.invalid-input {
 	border: 2px solid red;
 	background-color: #ff9999;
-}
-
-.input:valid {
-	border: none;
-	background: $white-color;
 }
 
 .underline {
