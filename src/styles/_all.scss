@@ -1,12 +1,11 @@
 html,
 body {
 	box-sizing: border-box;
-
 	position: relative;
 	height: 100vh;
-
 	font-family: $primary-font-face;
 	line-height: $primary-line-heigth;
+	scroll-behavior: smooth;
 }
 
 a,
@@ -24,8 +23,7 @@ button {
 }
 
 a,
-button,
-input {
+button {
 	cursor: pointer;
 }
 
@@ -49,10 +47,6 @@ input {
 .section-subtitle {
 	color: $black-color;
 	font-weight: 600;
-
-	@include low-laptop {
-		text-align: center;
-	}
 }
 
 .section-title {
@@ -60,6 +54,7 @@ input {
 
 	@include low-laptop {
 		font-size: $subtitle-font-size;
+		text-align: center;
 	}
 }
 
@@ -168,10 +163,6 @@ input {
 	width: 100%;
 	background: $gray-color;
 	margin-bottom: 20px;
-
-	@include mobile {
-		display: none;
-	}
 }
 
 .is-active {

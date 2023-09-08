@@ -21,9 +21,7 @@
 	&__title,
 	&__text {
 		color: $white-color;
-	}
 
-	&__text {
 		@include low-laptop {
 			text-align: center;
 		}

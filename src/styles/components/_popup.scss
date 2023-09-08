@@ -16,7 +16,6 @@
 	::-webkit-scrollbar-track {
 		background: $gray-color;
 		border-radius: 20px;
-
 		max-height: 100px;
 	}
 
@@ -38,9 +37,13 @@
 		position: absolute;
 		top: 40px;
 		right: 40px;
-
 		border: none;
 		background: transparent;
+
+		@include mobile {
+			top: 10px;
+			right: 10px;
+		}
 	}
 
 	&__wrapper {
@@ -48,26 +51,46 @@
 	}
 
 	&__header {
-		display: flex;
-		align-items: center;
+		@include flex-align-center;
 		gap: 40px;
+
+		@include tablet {
+			padding-top: 20px;
+		}
+
+		@include mobile {
+			gap: 20px;
+		}
 	}
 
 	&__header-wrapper {
-		display: flex;
-		justify-content: start;
+		@include flex-justify-center;
 		flex-direction: column;
 		gap: 40px;
+
+		@include mobile {
+			gap: 1px;
+		}
 	}
 
 	&__image {
 		width: 160px;
 		height: 222px;
+
+		@include mobile {
+			width: 60px;
+			height: 88px;
+		}
 	}
 
 	&__social-link svg {
 		width: 40px;
 		height: 40px;
+
+		@include mobile {
+			width: 24px;
+			height: 24px;
+		}
 	}
 }
 
@@ -76,6 +99,16 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 20px 40px;
+
+		// @include tablet {
+		// 	@include flex-center-center;
+		// 	flex-direction: column;
+		// 	gap: 10px;
+		// }
+
+		@include mobile {
+			padding: 20px 0;
+		}
 	}
 
 	&__nav-btn {
@@ -83,6 +116,16 @@
 		background: transparent;
 		color: $black-color;
 		font-size: 20px;
+
+		@include tablet {
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		@include mobile {
+			font-size: 12px;
+			font-weight: 600;
+		}
 	}
 
 	&__nav-btn.is-active {
