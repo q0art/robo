@@ -18,19 +18,5 @@ export const slider = () => {
 			prevEl: '.trainers-nav__btn--prev',
 			nextEl: '.trainers-nav__btn--next',
 		},
-		// breakpoints: {
-		// 	768: {
-		// 		slidesPerView: 2,
-		// 		spaceBetween: 20,
-		// 	},
-		// 	1024: {
-		// 		slidesPerView: 3,
-		// 		spaceBetween: 20,
-		// 	},
-		// 	1360: {
-		// 		slidesPerView: 4,
-		// 		spaceBetween: 20,
-		// 	},
-		// },
 	});
 };

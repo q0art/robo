@@ -102,7 +102,7 @@ input {
 	font-size: $text-font-size;
 	padding: 20px;
 	border-radius: 5px;
-
+	text-align: center;
 	box-shadow: $light-shadow;
 }
 
@@ -161,6 +161,17 @@ input {
 .input:valid {
 	border: none;
 	background: $white-color;
+}
+
+.underline {
+	height: 2px;
+	width: 100%;
+	background: $gray-color;
+	margin-bottom: 20px;
+
+	@include mobile {
+		display: none;
+	}
 }
 
 .is-active {

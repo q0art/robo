@@ -1,0 +1,109 @@
+.trainers-popup {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+	backdrop-filter: blur(20px);
+
+	::-webkit-scrollbar {
+		height: 170px;
+		width: 5px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: $gray-color;
+		border-radius: 20px;
+
+		max-height: 100px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: $black-color;
+		border-radius: 20px;
+	}
+
+	&__container {
+		max-width: 940px;
+		margin: auto;
+		position: relative;
+		background: $white-color;
+		padding: 40px;
+		border-radius: 20px;
+	}
+
+	&__btn--close {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+
+		border: none;
+		background: transparent;
+	}
+
+	&__wrapper {
+		gap: 40px;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+
+	&__header-wrapper {
+		display: flex;
+		justify-content: start;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	&__image {
+		width: 160px;
+		height: 222px;
+	}
+
+	&__social-link svg {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.trainers-tabs {
+	&__nav-list {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 40px;
+	}
+
+	&__nav-btn {
+		border: none;
+		background: transparent;
+		color: $black-color;
+		font-size: 20px;
+	}
+
+	&__nav-btn.is-active {
+		color: $red-color;
+	}
+
+	&__content {
+		overflow-y: auto;
+		max-height: 300px;
+		box-shadow: $light-shadow;
+		border-radius: 20px;
+	}
+
+	&__wrapper {
+		padding: 20px;
+		display: none;
+	}
+
+	&__wrapper.is-active {
+		@include flex-justify-center;
+		flex-direction: column;
+		gap: 40px;
+	}
+}
