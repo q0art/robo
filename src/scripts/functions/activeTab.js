@@ -16,6 +16,7 @@ export const activeTab = () => {
 		});
 	});
 
+	// delete maybe
 	tabs.forEach((tab) => {
 		tab.classList.remove('is-active');
 	});
