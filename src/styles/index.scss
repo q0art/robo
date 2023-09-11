@@ -4,7 +4,6 @@
 @import 'mixins/breakpoints';
 @import 'mixins/components';
 @import 'mixins/flex';
-@import 'mixins/fonts';
 
 @import 'all';
 
@@ -17,4 +16,5 @@
 @import 'components/order';
 @import 'components/packets';
 @import 'components/popup';
+@import 'components/tooltip';
 @import 'components/trainers';

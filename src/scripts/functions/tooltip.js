@@ -1,12 +1,10 @@
 import { createPopper } from '@popperjs/core';
 
 export const tooltip = () => {
-	const tooltipTriggers = document.querySelectorAll(
-		'.benefits-content__trigger'
-	);
+	const tooltipTriggers = document.querySelectorAll('.tooltip__trigger');
 
 	tooltipTriggers.forEach((trigger) => {
-		const tooltip = trigger.parentNode.querySelector('.tooltip');
+		const tooltip = trigger.parentNode.querySelector('.tooltip__text');
 
 		createPopper(trigger, tooltip, {
 			placement: 'top',

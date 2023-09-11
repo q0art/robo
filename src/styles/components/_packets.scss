@@ -17,15 +17,15 @@
 	}
 
 	&__content-item {
-		//$gap: 40px;
-		//width: calc((100% / 3) - calc($gap * 3 / 4));
-		// в миксин, желательно чтобы можно было передать количество карточек
+		@include card(40px, 3);
 		@include flex-center-center;
 		flex-direction: column;
+
 		gap: 40px;
 		padding: 40px;
 		background: $white-color;
 		border: 1px solid $silver-color;
+		color: $black-color;
 		border-radius: 20px;
 		box-shadow: $light-shadow;
 
@@ -43,24 +43,12 @@
 		text-align: center;
 	}
 
-	&__content-title,
-	&__content-price,
-	&__content-text {
-		color: $black-color;
-	}
-
 	&__content-btn {
 		width: 100%;
 	}
 
 	&__content-item--primary {
 		background-color: $black-color;
-
-		.packets__content-title,
-		.packets__content-price,
-		.packets__content-text {
-			// много букав, вешай на родителя
-			color: $white-color;
-		}
+		color: $white-color;
 	}
 }

@@ -1,7 +1,10 @@
 .header {
-	// обрати внимание на макет, тут у хедера паддинги по 100рх слева и справа
-	padding: 40px 0;
+	padding: 40px 100px;
 	background-color: $black-color;
+
+	@include low-desktop {
+		padding: 40px 20px;
+	}
 
 	&__container {
 		@include flex-space-center;

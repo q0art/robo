@@ -1,9 +1,3 @@
-// тут лучше сделать по-другому:
-// low-desktop будет до 1260рх
-// tablet до 1024
-// mobile до 768
-// mobile-min до 480
-// потому что планшет обычно находится в диапазоне 768-1024
 @mixin mobile() {
 	@media screen and (max-width: 480px) {
 		@content;

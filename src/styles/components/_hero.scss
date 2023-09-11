@@ -2,8 +2,7 @@
 	background-color: $black-color;
 
 	&__container {
-		// ну тут space-between не помешал бы как по мне)
-		@include flex-align-center;
+		@include flex-space-center;
 
 		@include low-laptop {
 			flex-direction: column;
@@ -11,31 +10,13 @@
 	}
 
 	&__btn {
-		// все такие вещи выносим в классы типа hidden-mobile и visible-tablet
-		// должно быть так: hero__btn visible tablet
-		// а в классе visible tablet -
-
-		//.visible-tablet {
-		//	display: none !important;
-		//
-		//	@include tablet {
-		//		display: block !important;
-		//	}
-		//}
-
-		// плюс у тебя исчезнет ненужный класс для такой же кнопки
-
-		display: none;
-
 		@include low-laptop {
-			display: block;
 			margin: 0 auto;
 			width: 50%;
 		}
 
 		@include tablet {
-			// только паддинги на родительском элементе
-			width: calc(100% - 2 * $container-offset);
+			width: 100%;
 		}
 	}
 }
@@ -44,19 +25,13 @@
 	@include flex-justify-center;
 	flex-direction: column;
 	gap: 40px;
+	color: $white-color;
 	max-width: 520px;
 
 	@include low-laptop {
 		@include flex-center-center;
 		text-align: center;
 		margin-bottom: 20px;
-	}
-
-	&__title,
-	&__text,
-	&__btn {
-		// лучше навесь на родителя
-		color: $white-color;
 	}
 
 	&__title {
@@ -69,7 +44,6 @@
 		}
 
 		@include mobile {
-			// названия таким переменным нужно давать нейтральные, вроде $f-size-900
 			font-size: $subtitle-font-size;
 		}
 	}

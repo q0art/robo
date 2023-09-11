@@ -1,6 +1,9 @@
-// очень хорошо, почему не используешь?)
 @mixin card($container-gap, $card-count) {
 	width: calc(
 		(100% / #{$card-count}) - ($container-gap * ($card-count - 1) / $card-count)
 	);
+}
+
+@mixin padding-container-left {
+	padding-left: max($container-offset, calc(100% - $container-width) / 2);
 }

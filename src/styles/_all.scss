@@ -1,8 +1,12 @@
+* {
+	box-sizing: border-box;
+}
+
 html,
 body {
-	box-sizing: border-box;
 	position: relative;
 	height: 100vh;
+	color: $black-color;
 	font-family: $primary-font-face;
 	line-height: $primary-line-heigth;
 	scroll-behavior: smooth;
@@ -47,13 +51,12 @@ button {
 	padding: 120px 0 0;
 
 	@include low-laptop {
-		padding: 120px 0;
+		padding: 120px 0 40px;
 	}
 }
 
 .section-title,
 .section-subtitle {
-	color: $black-color;
 	font-weight: 600;
 }
 
@@ -75,7 +78,6 @@ button {
 }
 
 .section-text {
-	color: $gray-color;
 	font-size: $text-font-size;
 	font-weight: 400;
 
@@ -115,17 +117,6 @@ button {
 
 .btn--secondary {
 	background-color: $black-color;
-}
-
-.tooltip {
-	padding: 10px;
-	background: $white-color;
-	border-radius: 5px;
-	opacity: 0;
-	color: $black-color;
-	font-size: $text-font-size;
-
-	box-shadow: $light-shadow;
 }
 
 .swiper-scrollbar-drag {
@@ -168,6 +159,42 @@ button {
 	width: 100%;
 	background: $gray-color;
 	margin-bottom: 20px;
+}
+
+.visible-desktop {
+	display: none !important;
+
+	@include low-desktop {
+		display: block !important;
+	}
+}
+
+.visible-low-laptop {
+	display: none !important;
+
+	@include low-laptop {
+		display: block !important;
+	}
+}
+
+.visible-tablet {
+	display: none !important;
+
+	@include tablet {
+		display: block !important;
+	}
+}
+
+.visible-mobile {
+	display: none !important;
+
+	@include mobile {
+		display: block !important;
+	}
+}
+
+.is-hidden {
+	display: none !important;
 }
 
 .is-active {

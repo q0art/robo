@@ -78,6 +78,10 @@
 		}
 	}
 
+	&__text {
+		color: $gray-color;
+	}
+
 	&__social-link svg {
 		width: 40px;
 		height: 40px;
@@ -94,12 +98,6 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 20px 40px;
-
-		// @include tablet {
-		// 	@include flex-center-center;
-		// 	flex-direction: column;
-		// 	gap: 10px;
-		// }
 
 		@include mobile {
 			padding: 20px 0;

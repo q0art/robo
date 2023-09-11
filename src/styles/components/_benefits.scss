@@ -15,40 +15,17 @@
 			flex-direction: column;
 		}
 	}
-}
-// зачем еще раз прописываешь класс секции?)
-.benefits-content {
-	&__title {
-		// зачем?
-		display: inline-block;
-		margin-bottom: 20px;
-		// проверь на мобилке
-	}
 
-	&__text {
-		@include low-laptop {
-			max-width: 400px;
+	&-content {
+		&__title {
+			margin-bottom: 20px;
 		}
-	}
 
-	// тултип это отдельный блок, его не нужно привязывать к секции
-
-	&__tooltip {
-		display: inline-block;
-	}
-
-	&__trigger {
-		@include flex-center-center;
-		width: 28px;
-		height: 28px;
-		border-radius: 50%;
-		//width: 28px;
-		margin-left: 10px;
-		//padding: 0 12px;
-		font-size: $text-font-size;
-		background-color: $silver-color;
-		//border-radius: 20px;
-		cursor: pointer;
-		box-shadow: $light-shadow;
+		&__text {
+			color: $gray-color;
+			@include low-laptop {
+				max-width: 400px;
+			}
+		}
 	}
 }
