@@ -18,20 +18,20 @@ export const getData = (trainerCard) => {
 		'.trainer__content-awards'
 	).textContent;
 
-	const popupImage = document.querySelector('.trainers-popup__image');
+	const popupImage = document.querySelector('.popup__image');
 	popupImage.src = trainerImage;
-	const pupupTitle = document.querySelector('.trainers-popup__title');
+	const pupupTitle = document.querySelector('.popup__title');
 	pupupTitle.textContent = trainerName;
-	const pupupText = document.querySelector('.trainers-popup__text');
+	const pupupText = document.querySelector('.popup__text');
 	pupupText.textContent = trainerText;
 	const pupupTextEducation = document.querySelector(
-		'.tab-content__text-education'
+		'.popup-content__text-education'
 	);
 	pupupTextEducation.textContent = trainerTextEducation;
 	const pupupTextExperience = document.querySelector(
 		'.tab-content__text-experience'
 	);
 	pupupTextExperience.textContent = trainerTextExperience;
-	const pupupTextAwards = document.querySelector('.tab-content__text-awards');
+	const pupupTextAwards = document.querySelector('.popup-content__text-awards');
 	pupupTextAwards.textContent = trainerTextAwards;
 };

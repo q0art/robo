@@ -19,50 +19,50 @@
 			width: 100%;
 		}
 	}
-}
 
-.hero-content {
-	@include flex-justify-center;
-	flex-direction: column;
-	gap: 40px;
-	color: $white-color;
-	max-width: 520px;
-
-	@include low-laptop {
-		@include flex-center-center;
-		text-align: center;
-		margin-bottom: 20px;
-	}
-
-	&__title {
-		font-size: 70px;
-		font-weight: 600;
-		text-transform: uppercase;
-
-		@include low-desktop {
-			font-size: $title-font-size;
-		}
-
-		@include mobile {
-			font-size: $subtitle-font-size;
-		}
-	}
-
-	&__text {
-		max-width: 480px;
-		font-size: $subtitle-font-size;
-
-		@include tablet {
-			font-size: $text-font-size;
-			max-width: 300px;
-		}
-	}
-
-	&__btn {
-		max-width: 260px;
+	&-content {
+		@include flex-justify-center;
+		flex-direction: column;
+		gap: 40px;
+		color: $white-color;
+		max-width: 520px;
 
 		@include low-laptop {
-			display: none;
+			@include flex-center-center;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		&__title {
+			font-size: 70px;
+			font-weight: 600;
+			text-transform: uppercase;
+
+			@include low-desktop {
+				font-size: $title-font-size;
+			}
+
+			@include mobile {
+				font-size: $subtitle-font-size;
+			}
+		}
+
+		&__text {
+			max-width: 480px;
+			font-size: $subtitle-font-size;
+
+			@include tablet {
+				font-size: $text-font-size;
+				max-width: 300px;
+			}
+		}
+
+		&__btn {
+			max-width: 260px;
+
+			@include low-laptop {
+				display: none;
+			}
 		}
 	}
 }

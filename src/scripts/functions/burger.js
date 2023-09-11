@@ -1,3 +1,5 @@
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+
 export const burger = () => {
 	const burgerOpen = document.querySelector('.burger--open');
 	const burgerClose = document.querySelector('.burger--close');
@@ -6,15 +8,18 @@ export const burger = () => {
 
 	burgerOpen.addEventListener('click', () => {
 		headerNav.classList.add('is-active');
+		disableBodyScroll(headerNav);
 	});
 
 	burgerClose.addEventListener('click', () => {
 		headerNav.classList.remove('is-active');
+		enableBodyScroll(headerNav);
 	});
 
 	navLinks.forEach((link) => {
 		link.addEventListener('click', () => {
 			headerNav.classList.remove('is-active');
+			enableBodyScroll(headerNav);
 		});
 	});
 };

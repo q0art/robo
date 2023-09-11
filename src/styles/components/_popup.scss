@@ -1,4 +1,4 @@
-.trainers-popup {
+.popup {
 	position: fixed;
 	z-index: 999;
 	top: 0;
@@ -91,50 +91,50 @@
 			height: 24px;
 		}
 	}
-}
 
-.trainers-tabs {
-	&__nav-list {
-		display: flex;
-		justify-content: space-between;
-		padding: 20px 40px;
+	&-tabs {
+		&__nav-list {
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 40px;
 
-		@include mobile {
-			padding: 20px 0;
+			@include mobile {
+				padding: 20px 0;
+			}
 		}
-	}
 
-	&__nav-btn {
-		border: none;
-		background: transparent;
-		color: $black-color;
-		font-size: 20px;
+		&__nav-btn {
+			border: none;
+			background: transparent;
+			color: $black-color;
+			font-size: 20px;
 
-		@include tablet {
-			font-size: 18px;
-			font-weight: 700;
+			@include tablet {
+				font-size: 18px;
+				font-weight: 700;
+			}
 		}
-	}
 
-	&__nav-btn.is-active {
-		color: $red-color;
-	}
+		&__nav-btn.is-active {
+			color: $red-color;
+		}
 
-	&__content {
-		overflow-y: auto;
-		max-height: 300px;
-		box-shadow: $light-shadow;
-		border-radius: 20px;
-	}
+		&__content {
+			overflow-y: auto;
+			max-height: 300px;
+			box-shadow: $light-shadow;
+			border-radius: 20px;
+		}
 
-	&__wrapper {
-		padding: 20px;
-		display: none;
-	}
+		&__wrapper {
+			padding: 20px;
+			display: none;
+		}
 
-	&__wrapper.is-active {
-		@include flex-justify-center;
-		flex-direction: column;
-		gap: 40px;
+		&__wrapper.is-active {
+			@include flex-justify-center;
+			flex-direction: column;
+			gap: 40px;
+		}
 	}
 }

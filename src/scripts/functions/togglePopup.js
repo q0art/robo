@@ -1,10 +1,8 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 export const togglePopup = () => {
-	const trainersPopup = document.querySelector('.trainers-popup');
-	const trainersPopupContainer = document.querySelector(
-		'.trainers-popup__container'
-	);
+	const trainersPopup = document.querySelector('.popup');
+	const trainersPopupContainer = document.querySelector('.popup__container');
 
 	document.addEventListener('click', ({ target }) => {
 		const popupOpen = target.closest('.trainers-card__link');
@@ -15,7 +13,7 @@ export const togglePopup = () => {
 	});
 
 	trainersPopup.addEventListener('click', ({ target }) => {
-		const popupClose = target.closest('.trainers-popup__btn--close');
+		const popupClose = target.closest('.popup__btn--close');
 		if (!popupClose) return;
 
 		trainersPopup.style.display = 'none';
@@ -23,7 +21,7 @@ export const togglePopup = () => {
 	});
 
 	trainersPopup.addEventListener('click', ({ target }) => {
-		const isPopupOpen = target.closest('.trainers-popup__container');
+		const isPopupOpen = target.closest('.popup__container');
 		if (!isPopupOpen) {
 			trainersPopup.style.display = 'none';
 			enableBodyScroll(trainersPopupContainer);

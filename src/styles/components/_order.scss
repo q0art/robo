@@ -10,26 +10,32 @@
 			flex-direction: column;
 		}
 	}
-}
 
-.order-content {
-	@include flex-justify-center;
-	flex-direction: column;
-	gap: 40px;
-	max-width: 400px;
+	&-content {
+		@include flex-justify-center;
+		flex-direction: column;
+		gap: 40px;
+		max-width: 400px;
 
-	&__title,
-	&__text {
-		color: $white-color;
+		&__title,
+		&__text {
+			color: $white-color;
 
-		@include low-laptop {
-			text-align: center;
+			@include low-laptop {
+				text-align: center;
+			}
 		}
 	}
-}
 
-.order-form {
-	@include flex-justify-center;
-	flex-direction: column;
-	gap: 20px;
+	&-form {
+		@include flex-justify-center;
+		flex-direction: column;
+		gap: 20px;
+
+		&__input {
+			width: 500px;
+			height: 64px;
+			padding: 0 20px;
+		}
+	}
 }

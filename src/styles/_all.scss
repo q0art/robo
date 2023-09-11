@@ -128,10 +128,6 @@ button {
 }
 
 .input {
-	// плохая идея задавать утилитарному классу такие конкретные стили
-	width: 500px;
-	height: 64px;
-	padding: 0 20px;
 	color: $black-color;
 	font-size: $text-font-size;
 	border: none;
