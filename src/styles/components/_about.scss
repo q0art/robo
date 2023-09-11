@@ -4,6 +4,7 @@
 	&__container {
 		@include flex-justify-center;
 		flex-direction: column;
+		// лучше оставь маржин, так понятнее будет
 		gap: 80px;
 	}
 
@@ -32,8 +33,14 @@
 
 	&__text--highlight {
 		font-weight: 600;
+		// на мобилке 20рх
 	}
 
+
+	// &__content {
+	// 	&-list
+	//  &-item
+	// }
 	&__content-list {
 		@include flex-align-center;
 		gap: 40px;
@@ -46,6 +53,8 @@
 			@include flex-align-start;
 			flex-direction: column;
 			gap: 80px;
+			// на 768 у меня уехало все((
+			// только паддинги на родителе
 			margin: 0 auto;
 		}
 	}
@@ -74,5 +83,6 @@
 		color: $red-color;
 		font-size: 70px;
 		font-weight: 600;
+		// а мне показалось что в макете на мобилке здесь 60рх, да и описание немного по центру
 	}
 }

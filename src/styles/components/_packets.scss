@@ -17,6 +17,9 @@
 	}
 
 	&__content-item {
+		//$gap: 40px;
+		//width: calc((100% / 3) - calc($gap * 3 / 4));
+		// в миксин, желательно чтобы можно было передать количество карточек
 		@include flex-center-center;
 		flex-direction: column;
 		gap: 40px;
@@ -56,6 +59,7 @@
 		.packets__content-title,
 		.packets__content-price,
 		.packets__content-text {
+			// много букав, вешай на родителя
 			color: $white-color;
 		}
 	}
