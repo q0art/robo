@@ -6,6 +6,10 @@
 		@include flex-center-center;
 		gap: 80px;
 
+		@include low-desktop {
+			text-align: center;
+		}
+
 		@include low-laptop {
 			flex-direction: column;
 		}
@@ -15,7 +19,7 @@
 		@include flex-justify-center;
 		flex-direction: column;
 		gap: 40px;
-		max-width: 400px;
+		//max-width: 400px;
 
 		&__title,
 		&__text {
@@ -28,14 +32,26 @@
 	}
 
 	&-form {
-		@include flex-justify-center;
-		flex-direction: column;
-		gap: 20px;
+		padding: 0 40px;
+
+		@include low-laptop {
+			padding: 0 80px;
+		}
+
+		@include tablet {
+			padding: 0 20px;
+		}
 
 		&__input {
-			width: 500px;
+			width: 100%;
 			height: 64px;
 			padding: 0 20px;
+
+			margin-bottom: 20px;
+		}
+
+		&__btn {
+			width: 100%;
 		}
 	}
 }

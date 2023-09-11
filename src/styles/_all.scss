@@ -144,8 +144,7 @@ button {
 	}
 
 	@include mobile {
-		// 100% с паддингом у родителя
-		width: 280px;
+		width: 100%;
 	}
 }
 
