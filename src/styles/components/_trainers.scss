@@ -6,6 +6,7 @@
 	&__wrapper {
 		overflow-x: hidden;
 		padding: 40px 0 40px
+		// я новый разработчик, который подключился на поддержку проекта. что это?
 			max($container-offset, calc(100% - $container-width) / 2);
 	}
 
@@ -13,7 +14,7 @@
 		overflow: visible !important;
 	}
 }
-
+// в один селектор
 .trainers-card {
 	max-width: 360px;
 
@@ -27,6 +28,8 @@
 	}
 
 	&__subtitle {
+		// это же имя, почему subtitle?
+		// в макетах чутб чутб жирнее
 		font-size: $subtitle-font-size;
 	}
 
@@ -36,6 +39,7 @@
 
 	&__subtitle,
 	&__text {
+		// на body
 		color: $black-color;
 		margin-bottom: 20px;
 	}
@@ -65,6 +69,8 @@
 		}
 
 		@include mobile {
+			// a?
+			// width: 100%
 			display: 200px;
 		}
 	}
@@ -85,6 +91,8 @@
 		box-shadow: $light-shadow;
 
 		&--prev {
+			// svg inline
+			// хватит одной с rotate(180deg)
 			background: url('./../../../public/icons/arrow-left.png') no-repeat center
 				center;
 		}

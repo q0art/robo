@@ -35,9 +35,12 @@
 					</ul>
 					<button class="burger--close"></button>
 				</nav>
-				<a href="telto#" class="phone header__phone"
-					>+7&nbsp;800&nbsp;000 11&nbsp;22</a
-				>
+<!--				должна быть валидная ссылка tel:8800......-->
+<!--				я бы по-другому сделал форматирование, так проще будет заменить контент-->
+				<a href="telto#" class="phone header__phone">
+					+7&nbsp;800&nbsp;000 11&nbsp;22
+				</a>
+<!--				svg-шки лучше добавлять прямо в DOM. Пока что это будет только сложнее, потом, когда добавим шаблонизатор, сделаем проще-->
 				<button class="burger--open"></button>
 			</div>
 		</header>
@@ -72,6 +75,7 @@
 					</div>
 					<ul class="about__content-list">
 						<li class="about__content-item">
+<!--							b? strong?-->
 							<span class="about__content-digit">10</span>
 							<p class="about__content-text">
 								УМК по различным направлениям по робототехнике
@@ -108,10 +112,11 @@
 						<li class="benefits__content-item">
 							<h3 class="section-subtitle benefits-content__title">
 								Удостоверение
-								<div class="benefits-content__tooltip">
+<!--								а у меня шторм подсвечивает тег див. Может лучше убрать его из заголовка?-->
+								<span class="benefits-content__tooltip">
 									<span class="benefits-content__trigger">i</span>
 									<p class="tooltip">Государственного образца</p>
-								</div>
+								</span>
 							</h3>
 							<p class="section-text benefits-content__text">
 								Дающее право преподавать робототехнику для детей 6-12 лет в
@@ -136,10 +141,13 @@
 								Практику
 								<div class="benefits-content__tooltip">
 									<span class="benefits-content__trigger">i</span>
+<!--									в макете без ошибок написано вроде(-->
+<!--									да и стиль у текста другой-->
 									<p class="tooltip">При наличие свободных мест</p>
 								</div>
 							</h3>
 							<p class="section-text benefits-content__text">
+<!--								где мой любимый типограф?)-->
 								Возможность пройти практику по преподаванию робототехники на
 								базе R:ED LAB (в оффлайн или онлайн формате)
 							</p>
@@ -159,6 +167,7 @@
 						<div class="swiper-wrapper">
 							<!-- trainer 1 -->
 							<div class="swiper-slide trainers-card">
+<!--								практика показывает что лучше использовать div c background-image-->
 								<img
 									src="./public/images/irina.jpg"
 									class="trainers-card__image"
@@ -265,6 +274,7 @@
 								20.000&nbsp;₽
 							</div>
 							<p class="section-text packets__content-text">
+<!--								поменял текст, карточка стала такой же по высоте, как и все остальные-->
 								УМК по&nbsp;робототетхнике и&nbsp;программированию
 							</p>
 							<a href="#order" class="btn--primary packets__content-btn">
@@ -525,6 +535,7 @@
 					<a href="#" class="logo footer__logo">robo.school</a>
 					<span class="footer__copy">&copy;&nbsp;ROBO. SCHOOL</span>
 				</div>
+<!--				валидная ссылка-->
 				<a href="telto#" class="phone footer__phone"
 					>+7&nbsp;800&nbsp;000 11&nbsp;22</a
 				>

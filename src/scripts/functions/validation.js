@@ -14,7 +14,7 @@ export const validationInputs = () => {
 	inputs.forEach((input) => {
 		input.addEventListener('keyup', (event) => {
 			event.preventDefault();
-
+			// event.target.name?
 			validate(event.target, patterns[event.target.attributes.name.value]);
 		});
 	});

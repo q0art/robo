@@ -1,3 +1,4 @@
+// очень хорошо, почему не используешь?)
 @mixin card($container-gap, $card-count) {
 	width: calc(
 		(100% / #{$card-count}) - ($container-gap * ($card-count - 1) / $card-count)
