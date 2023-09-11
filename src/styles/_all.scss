@@ -99,6 +99,10 @@ button {
 	@include low-laptop {
 		font-size: 24px;
 	}
+
+	@include mobile {
+		font-size: 20px;
+	}
 }
 
 .btn--primary,
